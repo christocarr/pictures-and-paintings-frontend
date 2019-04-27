@@ -18,6 +18,10 @@ a {
   color: #494949;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 li {
   list-style: none;
 }
@@ -41,6 +45,10 @@ nav {
   width: 80%;
 }
 
+.nav-items ul {
+  display: none;
+} 
+
 .menu {
   display: flex;
   align-items: center;
@@ -58,14 +66,15 @@ nav {
   z-index: 1003;
   top: 0;
   width: 100vw;
-  height: 100vh;
   background-color: #cfcece;
+  transition: all 2s;
 }
 
 .mobile-nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  translate: scaleY(100vh);
 }
 
 .mobile-nav li {
@@ -75,20 +84,6 @@ nav {
 .toggle {
   display: none;
 }
-
-/* .nav-items ul {
-  width: 50%;
-} */
-
-/* .nav-items li {
-  display: inline;
-  margin: 0 1em 0 0;
-}
-
-.nav-items li a {
-
-  padding: 0.5em;
-} */
 
 .nav-shopping-cart {
   display: flex;
@@ -175,18 +170,15 @@ nav {
   display: none;
 }
 
-.shopping-cart {
+.shopping-cart-icon {
   position: absolute;
   z-index: 1002;
   top: 15px;
   right: 15px;
-  /* transition: transform 0.5s, color 0.5s; */
 }
 
 .shopping-cart:hover {
   cursor: pointer;
-  /* transform: scale(1.5); */
-  /* color: red; */
 }
 
 .fa-cart-plus {
@@ -234,5 +226,25 @@ footer {
 -------------------------------------------*/
 
 @media (min-width: 720px) {
-  
+  .menu-open {
+    display: none;
+  }
+
+  .nav-items ul {
+    display: flex;
+    width: 60%;
+  } 
+
+  .nav-items li {
+    display: inline;
+    margin: 0 1em 0 0;
+  }
+
+  .nav-items li a {
+    padding: 0.5em;
+  }
+
+  .nav-shopping-cart {
+    width: 40%;
+  }
 }
