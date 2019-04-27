@@ -8,6 +8,20 @@ html {
   scroll-behavior: smooth;
 }
 
+.fas {
+  font-size: 1.3em;
+  color: #494949;
+}
+
+a {
+  text-decoration: none;
+  color: #494949;
+}
+
+li {
+  list-style: none;
+}
+
 /*-------------------------------------------
                 nav styles
 -------------------------------------------*/
@@ -20,44 +34,81 @@ nav {
   background-color: #f5f3f3;
 }
 
+
 .nav-items {
   display: flex;
   align-items: center;
   width: 80%;
 }
 
-.nav-items ul {
-  width: 50%;
+.menu {
+  display: flex;
+  align-items: center;
+  width: 10%;
+  height: 60%;
+  padding: 0.5em 0.5em 0.5em 0;
 }
 
-.nav-items li {
+.menu:hover {
+  cursor: pointer;
+}
+
+.open-nav {
+  position: absolute;
+  z-index: 1003;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #cfcece;
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-nav li {
+  padding: 1em;
+}
+
+.toggle {
+  display: none;
+}
+
+/* .nav-items ul {
+  width: 50%;
+} */
+
+/* .nav-items li {
   display: inline;
   margin: 0 1em 0 0;
 }
 
 .nav-items li a {
-  color: #494949;
-  text-decoration: none;
+
   padding: 0.5em;
-}
+} */
 
 .nav-shopping-cart {
   display: flex;
   justify-content: flex-end;
-  width: 50%;
+  align-items: center;
+  width: 90%;
+  height: 100%;
 }
 
 .nav-shopping-cart a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 20%;
-  height: 50%;
+  width: 40%;
+  height: 70%;
   text-decoration: none;
   color: #494949;
   background-color: white;
   border: 1px solid #b9b8b8;
-}
+} 
 
 /*-------------------------------------------
             end nav styles
@@ -68,7 +119,7 @@ nav {
 -------------------------------------------*/
 
 .banner {
-  height: 10em;
+  height: 40vh;
   background-color: white;
 }
 
@@ -176,4 +227,12 @@ nav {
 footer {
   height: 5em;
   background-color: #f5f3f3;
+}
+
+/*-------------------------------------------
+                media queries
+-------------------------------------------*/
+
+@media (min-width: 720px) {
+  
 }
