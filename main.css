@@ -80,7 +80,7 @@ nav {
   top: 0;
   height: 100vh;
   width: 100vw;
-  background-color:var(--mobile-menu-color);
+  background-color: var(--mobile-menu-color);
 }
 
 .mobile-nav {
@@ -149,7 +149,8 @@ nav {
 
 .banner {
   height: 40vh;
-  background-color: var(--sec-bg-color);
+  background: url(./images/13.Red_Evening.jpg) center /
+  cover no-repeat;
 }
 
 /*-------------------------------------------
