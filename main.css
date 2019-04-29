@@ -1,14 +1,15 @@
-/*----------------------------------]
+/*----------------------------------
 CSS VARIABLES
-:root {
-  color: #494949;
-  color: #494949;
-  background-color: #f5f3f3;
-  background-color: #cfcece;
-  background-color: white;
-  border:  #b9b8b8;
-}
 -----------------------------------*/
+:root {
+  --main-text-color: #494949;
+  --main-bg-color: #f5f3f3;
+  --mobile-menu-color: #cfcece;
+  --sec-bg-color: white;
+  --main-border-color:  #b9b8b8;
+  --overlay-color:  rgba(245, 243, 243, 0.5);
+}
+
 
 * {
   margin: 0;
@@ -22,12 +23,12 @@ html {
 
 .fas {
   font-size: 1.3em;
-  color: #494949;
+  color: var(--main-text-color);
 }
 
 a {
   text-decoration: none;
-  color: #494949;
+  color: var(--main-text-color);
 }
 
 a:hover {
@@ -47,7 +48,7 @@ nav {
   justify-content: center;
   width: 100vw;
   height: 3em;
-  background-color: #f5f3f3;
+  background-color: var(--main-bg-color);
 }
 
 
@@ -79,7 +80,7 @@ nav {
   top: 0;
   height: 100vh;
   width: 100vw;
-  background-color: #cfcece;
+  background-color:var(--mobile-menu-color);
 }
 
 .mobile-nav {
@@ -113,9 +114,9 @@ nav {
   width: 40%;
   height: 70%;
   text-decoration: none;
-  color: #494949;
-  background-color: white;
-  border: 1px solid #b9b8b8;
+  color: var(--main-text-color);
+  background-color: var(--sec-bg-color);
+  border: 1px solid var(--main-border-color);
 } 
 
 .cart {
@@ -130,7 +131,7 @@ nav {
   min-height: 10em;
   transition: all 0.3s ease-in-out;
   overflow: hidden;
-  background-color: #f5f3f3;
+  background-color: var(--main-bg-color);
 }
 
 .show-cart {
@@ -148,7 +149,7 @@ nav {
 
 .banner {
   height: 40vh;
-  background-color: white;
+  background-color: var(--sec-bg-color);
 }
 
 /*-------------------------------------------
@@ -162,7 +163,7 @@ nav {
 .gallery {
   display: flex;
   justify-content: center;
-  background-color: #f5f3f3;
+  background-color: var(--main-bg-color);
 }
 
 .gallery-wrapper {
@@ -172,7 +173,7 @@ nav {
   align-items: center;
   width: 100%;
   padding: 1em 0 1em 0;
-  background-color: #f5f3f3;
+  background-color: var(--main-bg-color);
 }
 
 .gallery-item {
@@ -199,7 +200,7 @@ nav {
   justify-content: space-around;
   width: 100%;
   height: 3em;
-  background-color: rgba(245, 243, 243, 0.5);
+  background-color: var(--overlay-color);
 }
 
 .item-description p {
@@ -253,12 +254,12 @@ nav {
 -------------------------------------------*/
 
 .about {
-  background-color: white;
+  background-color: var(--sec-bg-color);
 }
 
 footer {
   height: 5em;
-  background-color: #f5f3f3;
+  background-color: var(--main-bg-color);
 }
 
 /*-------------------------------------------
