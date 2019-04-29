@@ -1,13 +1,23 @@
 /*----------------------------------
-CSS VARIABLES
+          CSS VARIABLES
 -----------------------------------*/
 :root {
+
+  /*----site colors------*/
   --main-text-color: #494949;
   --main-bg-color: #f5f3f3;
   --mobile-menu-color: #cfcece;
   --sec-bg-color: white;
   --main-border-color:  #b9b8b8;
   --overlay-color:  rgba(245, 243, 243, 0.5);
+  --h1-color: white;
+  --h2-color: white;
+
+   /*----font sizes------*/
+   --root-font-size: 14px;
+   --h1-font-size: 2em;
+   --h2-font-size: 1.7em;
+   --h3-font-size: 1.4em;
 }
 
 
@@ -15,6 +25,7 @@ CSS VARIABLES
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: var(--root-font-size);
 }
 
 html {
@@ -39,6 +50,20 @@ li {
   list-style: none;
 }
 
+h1 {
+  color: var(--h1-color);
+  font-size: var(--h1-font-size);
+}
+
+h2 {
+  color: var(--h1-color);
+  font-size: var(--h2-font-size);
+}
+
+h3 {
+  color: var(--h1-color);
+  font-size: 2em;
+}
 /*-------------------------------------------
                 nav styles
 -------------------------------------------*/
@@ -148,7 +173,11 @@ nav {
 -------------------------------------------*/
 
 .banner {
-  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
   background: url(./images/13.Red_Evening.jpg) center /
   cover no-repeat;
 }
