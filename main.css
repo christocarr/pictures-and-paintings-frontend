@@ -61,8 +61,8 @@ h2 {
 }
 
 h3 {
-  color: var(--h1-color);
-  font-size: 2em;
+  color: var(--main-text-color);
+  font-size: var(--h3-font-size);
 }
 /*-------------------------------------------
                 nav styles
@@ -192,7 +192,9 @@ nav {
 
 .gallery {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: var(--main-bg-color);
 }
 
@@ -202,14 +204,24 @@ nav {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 1em 0 1em 0;
+  /* padding: 1em 0 1em 0; */
   background-color: var(--main-bg-color);
+}
+
+.gallery h3,
+.about h3 {
+  width: 80%;
+  margin: 1.5em 0 0 0;;
 }
 
 .gallery-item {
   position: relative;
   width: 80%;
   margin: 1em 0 0 0;
+}
+
+.gallery-item:last-of-type {
+  margin: 1em 0 1em 0;
 }
 
 .gallery-item img {
@@ -282,10 +294,21 @@ nav {
 /*-------------------------------------------
             end gallery section styles
 -------------------------------------------*/
+/*-------------------------------------------
+            about section styles
+-------------------------------------------*/
 
 .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--sec-bg-color);
 }
+
+/*-------------------------------------------
+            end about section styles
+-------------------------------------------*/
 
 footer {
   height: 5em;
