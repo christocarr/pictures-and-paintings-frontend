@@ -406,8 +406,12 @@ footer ul a:last-of-type {
     width: 60%;
   }
 
-  .gallery-wrapper {
+  .gallery h3 {
     width: 60%;
+  }
+
+  .gallery-wrapper {
+    width: 63%;
   }
 
   .gallery-item {
@@ -421,5 +425,10 @@ footer ul a:last-of-type {
 
   .gallery-item:nth-child(3) {
     margin-right: 1em;
+  }
+
+  .about h3,
+  .about p {
+    width: 60%;
   }
 }
