@@ -408,8 +408,17 @@ footer ul a:last-of-type {
 }
 
 @media only screen and (min-width: 1224px) {
+
+  nav {
+    height: 4em;
+  }
+
   .nav-items {
     width: 60%;
+  }
+
+  .banner {
+    height: 50vh;
   }
 
   .gallery h3 {
