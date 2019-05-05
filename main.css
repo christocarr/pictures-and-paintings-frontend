@@ -388,6 +388,10 @@ footer ul a:last-of-type {
     padding: 0.5em;
   }
 
+  .cart-button {
+    width: 50%;
+  }
+
   .nav-shopping-cart {
     width: 40%;
   }
