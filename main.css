@@ -339,12 +339,13 @@ nav {
 
 footer {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: space-around;
   align-items: center;
   background-color: var(--main-bg-color);
 }
 footer p {
-  margin: 2em 0 1em 0;
+  margin: 1em 0 1em 0;
 }
 
 footer span {
@@ -352,12 +353,12 @@ footer span {
 }
 
 footer ul {
-  margin: 2em 0 1em 0;
+  margin: 1em 0 1em 0;
 }
 
 footer ul a {
-  margin: 0 1em 0 0;
-  padding: 0.7em;
+  margin: 0 0.5em 0 0;
+  padding: 0.5em;
 }
 
 footer ul a:last-of-type {
@@ -405,6 +406,10 @@ footer ul a:last-of-type {
 
   .gallery-item:nth-child(2) {
     margin-right: 0;
+  }
+
+  footer {
+    flex-direction: row;
   }
 }
 
