@@ -92,13 +92,13 @@
           </section>
           <section id="contact" class="form-wrapper">
             <h3>Contact</h3>
-              <form>
+              <form validate> 
                 <label for="name">Name:</label>
-                <input id="name" type="text">
+                <input id="name" type="text" minlength="3" required>
                 <label for="email">Email:</label>
-                <input id="email" type="text">
+                <input id="email" pattern="" type="email" required>
                 <label for="message" type="text">Message:</label>
-                <textarea rows="4"></textarea>
+                <textarea rows="4" minlength="10" maxlength="200" required></textarea>
                 <button type="submit">Send</button>
               </form>
             </div>
