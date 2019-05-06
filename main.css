@@ -45,10 +45,13 @@ body {
 a {
   text-decoration: none;
   color: var(--main-text-color);
+  transition: color 0.7s ease;
 }
 
 a:hover {
   cursor: pointer;
+  color: #a00202;
+  background-color: white;
 }
 
 li {
