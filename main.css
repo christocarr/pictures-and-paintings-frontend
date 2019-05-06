@@ -342,13 +342,67 @@ nav {
 /*-------------------------------------------
             end about section styles
 -------------------------------------------*/
+/*-------------------------------------------
+            form section styles
+-------------------------------------------*/
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--main-bg-color);
+}
+
+.form-wrapper h3 {
+  width: 80%;
+  margin: 2em 0 0.5em 0;
+}
+
+.form-wrapper form {
+  width: 80%;
+  margin: 0 0 1em 0;
+}
+
+form input,
+form label,
+form textarea {
+  display: block;
+  width: 100%;
+}
+
+form label,
+form button {
+  margin: 0.5em 0 0 0;
+}
+
+form input,
+form textarea,
+form button {
+  padding: 0.3em;
+}
+
+form button {
+  width: 100%;
+}
+
+form button:hover {
+  cursor: pointer;
+}
+
+
+
+/*-------------------------------------------
+            end form section styles
+-------------------------------------------*/
 
 footer {
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--main-bg-color);
+  background-color: var(--sec-bg-color);
 }
 footer p {
   margin: 1em 0 1em 0;
@@ -422,6 +476,10 @@ footer ul a:last-of-type {
     margin-right: 0;
   }
 
+  .form-wrapper form {
+    width: 60%;
+  }
+
   footer {
     flex-direction: row;
   }
@@ -473,7 +531,17 @@ footer ul a:last-of-type {
   }
 
   .about h3,
+  .form-wrapper h3,
   .about p {
     width: 50%;
+  }
+
+  .form-wrapper form {
+    width: 30%;
+  }
+
+  form input,
+  form textarea {
+    margin: 0.5em 0 0 0;
   }
 }
