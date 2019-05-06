@@ -73,7 +73,7 @@ h3 {
 }
 
 p {
-  line-height: 1.4em;
+  line-height: 1.6em;
 }
 
 section,
@@ -444,7 +444,7 @@ footer ul a:last-of-type {
   }
 
   .nav-items {
-    width: 60%;
+    width: 50%;
   }
 
   .banner {
@@ -452,11 +452,11 @@ footer ul a:last-of-type {
   }
 
   .gallery h3 {
-    width: 60%;
+    width: 50%;
   }
 
   .gallery-wrapper {
-    width: 60%;
+    width: 50%;
   }
 
   .gallery-item {
@@ -474,6 +474,6 @@ footer ul a:last-of-type {
 
   .about h3,
   .about p {
-    width: 60%;
+    width: 50%;
   }
 }
